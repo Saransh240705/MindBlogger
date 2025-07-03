@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "slug": "getting-started-with-nextjs",
+    "title": "Getting Started with Next.js 15",
+    "description": "Learn how to build modern web applications with Next.js 15 and the App Router. This comprehensive guide covers everything from setup to deployment.",
+    "content": "# Getting Started with Next.js 15\n\nNext.js 15 brings exciting new features and improvements to the React framework. In this post, we'll explore the key features and how to get started.\n\n## What's New in Next.js 15\n\n- Improved App Router performance\n- Enhanced Server Components\n- Better TypeScript support\n- Optimized bundling\n\n## Setting Up Your First Project\n\nTo create a new Next.js project, run:\n\n```bash\nnpx create-next-app@latest my-app\n```\n\n## Key Features\n\n### App Router\nThe App Router provides a new way to build applications with React Server Components, streaming, and more.\n\n### Server Components\nServer Components allow you to render components on the server, reducing the JavaScript bundle size sent to the client.\n\n## Conclusion\n\nNext.js 15 continues to push the boundaries of what's possible with React applications. Start building today!",
+    "image": "/NextJs.png",
+    "category": "Web Development",
+    "tags": ["Next.js", "React", "JavaScript"],
+    "author": "John Doe",
+    "publishedAt": "2024-01-15",
+    "readTime": "5 min read"
+  },
+  {
+    "id": 2,
+    "slug": "mastering-tailwind-css",
+    "title": "Mastering Tailwind CSS for Modern UI Design",
+    "description": "Discover advanced Tailwind CSS techniques and best practices for creating beautiful, responsive user interfaces.",
+    "content": "# Mastering Tailwind CSS for Modern UI Design\n\nTailwind CSS has revolutionized how we approach styling in modern web development. Let's dive into advanced techniques.\n\n## Why Tailwind CSS?\n\n- Utility-first approach\n- Highly customizable\n- Great developer experience\n- Excellent performance\n\n## Advanced Techniques\n\n### Custom Components\nCreate reusable components while maintaining the utility-first approach:\n\n```css\n@layer components {\n  .btn-primary {\n    @apply px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600;\n  }\n}\n```\n\n### Responsive Design\nTailwind makes responsive design intuitive:\n\n```html\n<div class=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4\">\n  <!-- Content -->\n</div>\n```\n\n## Best Practices\n\n1. Use semantic class names for complex components\n2. Leverage Tailwind's design system\n3. Optimize for production with purging\n4. Use custom properties for theming\n\n## Conclusion\n\nTailwind CSS empowers developers to build beautiful interfaces quickly and efficiently.",
+    "image": "/Tailwindcss.png",
+    "category": "CSS",
+    "tags": ["Tailwind CSS", "CSS", "Design"],
+    "author": "Jane Smith",
+    "publishedAt": "2024-01-10",
+    "readTime": "7 min read"
+  },
+  {
+    "id": 3,
+    "slug": "react-server-components-guide",
+    "title": "React Server Components: A Complete Guide",
+    "description": "Understanding React Server Components and how they're changing the way we build React applications.",
+    "content": "# React Server Components: A Complete Guide\n\nReact Server Components represent a paradigm shift in how we build React applications. Let's explore this revolutionary feature.\n\n## What are Server Components?\n\nServer Components are React components that render on the server, allowing you to:\n\n- Reduce bundle size\n- Access server-side resources directly\n- Improve initial page load performance\n- Enhance SEO\n\n## Benefits\n\n### Performance\nServer Components don't ship JavaScript to the client, reducing bundle size significantly.\n\n### Security\nSensitive operations can be performed on the server without exposing APIs to the client.\n\n### Data Fetching\nDirect database access without additional API layers:\n\n```jsx\n// This runs on the server\nasync function BlogPost({ id }) {\n  const post = await db.post.findUnique({ where: { id } })\n  return <article>{post.content}</article>\n}\n```\n\n## Best Practices\n\n1. Use Server Components for data fetching\n2. Keep Client Components minimal\n3. Understand the component boundary\n4. Leverage streaming for better UX\n\n## Conclusion\n\nServer Components are the future of React development, offering unprecedented performance and developer experience improvements.",
+    "image": "/React.png",
+    "category": "React",
+    "tags": ["React", "Server Components", "Performance"],
+    "author": "Mike Johnson",
+    "publishedAt": "2024-01-05",
+    "readTime": "8 min read"
+  },
+  {
+    "id": 4,
+    "slug": "typescript-best-practices",
+    "title": "TypeScript Best Practices for Large Applications",
+    "description": "Learn essential TypeScript patterns and practices for building maintainable large-scale applications.",
+    "content": "# TypeScript Best Practices for Large Applications\n\nBuilding large applications with TypeScript requires careful planning and adherence to best practices. Here's your comprehensive guide.\n\n## Project Structure\n\nOrganize your TypeScript project for scalability:\n\n```\nsrc/\n├── types/\n├── utils/\n├── components/\n├── services/\n└── hooks/\n```\n\n## Type Safety\n\n### Strict Configuration\nAlways use strict TypeScript configuration:\n\n```json\n{\n  \"compilerOptions\": {\n    \"strict\": true,\n    \"noImplicitAny\": true,\n    \"strictNullChecks\": true\n  }\n}\n```\n\n### Generic Types\nLeverage generics for reusable type-safe code:\n\n```typescript\ninterface ApiResponse<T> {\n  data: T\n  status: number\n  message: string\n}\n```\n\n## Advanced Patterns\n\n### Utility Types\nUse TypeScript's built-in utility types:\n\n```typescript\ntype PartialUser = Partial<User>\ntype UserEmail = Pick<User, 'email'>\n```\n\n### Conditional Types\nCreate flexible type definitions:\n\n```typescript\ntype ApiResult<T> = T extends string ? string : number\n```\n\n## Testing\n\nEnsure type safety in tests:\n\n```typescript\nconst mockUser: User = {\n  id: 1,\n  name: 'Test User',\n  email: 'test@example.com'\n}\n```\n\n## Conclusion\n\nFollowing these TypeScript best practices will help you build robust, maintainable applications that scale with your team and requirements.",
+    "image": "/TypeScript.png",
+    "category": "TypeScript",
+    "tags": ["TypeScript", "Best Practices", "Architecture"],
+    "author": "Sarah Wilson",
+    "publishedAt": "2023-12-28",
+    "readTime": "6 min read"
+  },
+  {
+    "id": 5,
+    "slug": "web-performance-optimization",
+    "title": "Web Performance Optimization Techniques",
+    "description": "Essential techniques and strategies for optimizing web application performance and user experience.",
+    "content": "# Web Performance Optimization Techniques\n\nWeb performance directly impacts user experience and business metrics. Let's explore key optimization strategies.\n\n## Core Web Vitals\n\nFocus on Google's Core Web Vitals:\n\n- **LCP (Largest Contentful Paint)**: < 2.5s\n- **FID (First Input Delay)**: < 100ms\n- **CLS (Cumulative Layout Shift)**: < 0.1\n\n## Image Optimization\n\n### Modern Formats\nUse next-generation image formats:\n\n```jsx\n<Image\n  src=\"/hero.webp\"\n  alt=\"Hero image\"\n  width={800}\n  height={400}\n  priority\n/>\n```\n\n### Lazy Loading\nImplement lazy loading for below-the-fold images:\n\n```jsx\n<Image\n  src=\"/gallery.jpg\"\n  alt=\"Gallery\"\n  loading=\"lazy\"\n  width={400}\n  height={300}\n/>\n```\n\n## Code Splitting\n\n### Dynamic Imports\nSplit your JavaScript bundles:\n\n```javascript\nconst HeavyComponent = lazy(() => import('./HeavyComponent'))\n```\n\n### Route-based Splitting\nImplement route-based code splitting in Next.js automatically.\n\n## Caching Strategies\n\n### Browser Caching\nLeverage HTTP caching headers:\n\n```javascript\nres.setHeader('Cache-Control', 'public, max-age=31536000')\n```\n\n### CDN Integration\nUse Content Delivery Networks for static assets.\n\n## Monitoring\n\nImplement performance monitoring:\n\n- Google PageSpeed Insights\n- Lighthouse CI\n- Real User Monitoring (RUM)\n\n## Conclusion\n\nPerformance optimization is an ongoing process. Regular monitoring and optimization ensure your application delivers the best user experience.",
+    "image": "/Performance.png",
+    "category": "Performance",
+    "tags": ["Performance", "Optimization", "Web Vitals"],
+    "author": "Alex Chen",
+    "publishedAt": "2023-12-20",
+    "readTime": "9 min read"
+  },
+  {
+    "id": 6,
+    "slug": "modern-css-techniques",
+    "title": "Modern CSS Techniques Every Developer Should Know",
+    "description": "Explore cutting-edge CSS features and techniques that are shaping modern web design and development.",
+    "content": "# Modern CSS Techniques Every Developer Should Know\n\nCSS continues to evolve with powerful new features. Let's explore the latest techniques that every developer should master.\n\n## CSS Grid and Flexbox\n\n### CSS Grid for 2D Layouts\nCSS Grid excels at complex two-dimensional layouts:\n\n```css\n.grid-container {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n  gap: 2rem;\n}\n```\n\n### Flexbox for 1D Layouts\nFlexbox is perfect for one-dimensional layouts:\n\n```css\n.flex-container {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  gap: 1rem;\n}\n```\n\n## Container Queries\n\nStyle components based on their container size:\n\n```css\n@container (min-width: 400px) {\n  .card {\n    display: flex;\n    flex-direction: row;\n  }\n}\n```\n\n## CSS Custom Properties\n\nCreate dynamic, themeable designs:\n\n```css\n:root {\n  --primary-color: #3b82f6;\n  --spacing-unit: 1rem;\n}\n\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing-unit);\n}\n```\n\n## Modern Selectors\n\n### :has() Selector\nStyle parent elements based on their children:\n\n```css\n.card:has(img) {\n  display: grid;\n  grid-template-columns: 1fr 2fr;\n}\n```\n\n### :where() and :is()\nReduce specificity and group selectors:\n\n```css\n:where(h1, h2, h3) {\n  margin-top: 0;\n}\n```\n\n## Logical Properties\n\nUse logical properties for internationalization:\n\n```css\n.content {\n  margin-inline-start: 2rem;\n  padding-block: 1rem;\n}\n```\n\n## Conclusion\n\nThese modern CSS techniques enable more maintainable, flexible, and powerful stylesheets. Start incorporating them into your projects today!",
+    "image": "/CSS.png",
+    "category": "CSS",
+    "tags": ["CSS", "Modern Web", "Layout"],
+    "author": "Emma Davis",
+    "publishedAt": "2023-12-15",
+    "readTime": "7 min read"
+  }
+]
