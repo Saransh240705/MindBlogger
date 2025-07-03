@@ -50,11 +50,6 @@ A modern, responsive blog platform built with Next.js 15, TypeScript, and Tailwi
 
 ## 🚀 Getting Started
 
-### Prerequisites
-
-- Node.js 18+ 
-- npm, yarn, or pnpm
-
 ### Installation
 
 1. **Clone the repository**
@@ -81,8 +76,6 @@ A modern, responsive blog platform built with Next.js 15, TypeScript, and Tailwi
    pnpm dev
    \`\`\`
 
-4. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
 
 ### Building for Production
 
@@ -144,60 +137,14 @@ The platform is fully responsive with breakpoints:
 - **Tablet**: 768px - 1024px  
 - **Desktop**: > 1024px
 
-## 🔍 SEO Features
-
-- Semantic HTML structure
-- Meta tags for social sharing
-- Optimized images with Next.js Image component
-- Clean, SEO-friendly URLs
-- Proper heading hierarchy
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy automatically with zero configuration
-
-### Other Platforms
-
-The application can be deployed to any platform that supports Next.js:
-- Netlify
-- Railway
-- DigitalOcean App Platform
-- AWS Amplify
-
-## 📄 Environment Variables
-
-No environment variables are required for basic functionality. If you plan to integrate with a CMS or external APIs, create a \`.env.local\` file:
-
-\`\`\`env
-# Example for future integrations
-# NEXT_PUBLIC_API_URL=your-api-url
-# DATABASE_URL=your-database-url
-\`\`\`
 
 ## 🔮 Future Enhancements
 
 - **CMS Integration**: Replace JSON with headless CMS (Contentful, Strapi, etc.)
 - **Comments System**: Add comment functionality
 - **Newsletter**: Email subscription feature
-- **Dark Mode**: Theme switching capability
 - **Analytics**: Google Analytics or similar integration
 - **RSS Feed**: Automatic RSS feed generation
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (\`git checkout -b feature/amazing-feature\`)
-3. Commit your changes (\`git commit -m 'Add amazing feature'\`)
-4. Push to the branch (\`git push origin feature/amazing-feature\`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🙏 Acknowledgments
 
